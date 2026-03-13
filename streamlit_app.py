@@ -6,7 +6,7 @@ from PIL import Image
 
 IMG_SIZE = 128
 
-model = tf.keras.models.load_model("deepsafe_model.h5")
+model = tf.keras.models.load_model("model/deepsafe_model.h5")
 
 face_cascade = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
